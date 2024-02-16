@@ -100,3 +100,59 @@ gsap.from('.home__greeting, .home__name, .home__profession', { opacity: 0, durat
 gsap.from('.nav__logo .nav__toggle', { opacity: 0, duration: 2, delay: 1.5, y: 25, ease: 'expo.out', stagger: .2 })
 gsap.from('.nav__item', { opacity: 0, duration: 2, delay: 1.8, y: 25, ease: 'expo.out', stagger: .2 })
 gsap.from('.home__social-icon', { opacity: 0, duration: 2, delay: 2.3, y: 25, ease: 'expo.out', stagger: .2 })
+
+// shooting stars
+for (let i = 0; i < 50; i++) { // Increase or decrease for more/less sparkles
+    const sparkle = document.createElement('div');
+    sparkle.className = 'sparkle';
+    document.body.appendChild(sparkle);
+
+    // Randomize each sparkle's position
+    sparkle.style.top = `${Math.random() * 100}%`;
+    sparkle.style.left = `${Math.random() * 100}%`;
+
+    // Randomize the size
+    const size = Math.random() * 5 + 2; // Change 5 for larger sizes, 2 for minimum size
+    sparkle.style.width = `${size}px`;
+    sparkle.style.height = `${size}px`;
+
+    // Randomize the animation duration
+    sparkle.style.animationDuration = `${Math.random() * 2 + 1}s`; // Between 1 and 3 seconds
+
+    // Randomize the animation delay
+    sparkle.style.animationDelay = `${Math.random() * 2}s`; // Up to 2 seconds delay
+}
+
+// //carousel
+const buttons = document.querySelectorAll("[data-carousel-button]")
+
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        const offset = button.dataset.carouselButton === "next" ? 1 : -1
+        const slides = button.closest("[data-carousel]").querySelector("[data-slides]")
+
+        const activeSlide = slides.querySelector("[data-active]")
+        let newIndex = [...slides.children].indexOf(activeSlide) + offset
+
+        if (newIndex < 0) newIndex = slides.children.length - 1
+        if (newIndex >= slides.children.length) newIndex = 0
+
+        slides.children[newIndex].dataset.active = true
+        delete activeSlide.dataset.active
+
+    })
+})
+
+
+
+// Start moving the carousel automatically every 5 seconds
+// setInterval(autoMoveCarousel, 2000);
+// flip the card
+document.querySelectorAll('.flip-button').forEach(button => {
+    button.addEventListener('click', () => {
+        // Find the closest ancestor which is a card
+        const card = button.closest('.card');
+        card.classList.toggle('flipped');
+    });
+});
+

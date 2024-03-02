@@ -24,7 +24,9 @@
     <!-- header -->
     <header class="l-header" id="header">
         <nav class="nav bd-container">
-            <a href="#" class="nav__logo">Wardah Jabeen</a>
+            <a href="#" class="nav__logo">
+                <h2>Wardah Jabeen</h2>
+            </a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -32,7 +34,7 @@
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
                     <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contactme</a></li>
+                    <li class="nav__item nav__courses"><a href="#courses" class="nav__link">Courses</a></li>
                 </ul>
             </div>
 
@@ -60,9 +62,6 @@
 
                     <div class="home__img">
                         <img src="assets/img/pfp.png" alt="" />
-                        <!-- <p class="home__red">University of </p>
-                        <p class="home__yellow">Southern California</p> -->
-
                         <p>
                             <span class="home__gold">University of</span>
                             <span class="home__red">Southern California</span>
@@ -88,18 +87,18 @@
 
 
             </div>
-
+            <!-- 
             <div class="home__shooting-star home__star1"></div>
             <div class="home__shooting-star home__star2"></div>
             <div class="home__shooting-star home__star3"></div>
             <div class="home__shooting-star home__star4"></div>
             <div class="home__shooting-star home__star5"></div>
-            <div class="home__shooting-star home__star6"></div>
+            <div class="home__shooting-star home__star6"></div> -->
         </section>
 
 
         <!-- qualification -->
-        <section class="qualification section bd-container">
+        <section class="qualification section bd-container" id="about">
             <span class="section-subtitle">Experience and education</span>
             <h2 class="section-title">Qualification</h2>
 
@@ -147,7 +146,7 @@
 
                         <!-- experience 3 -->
                         <div class="qualification__data">
-                            <h3 class="qualification__area">Neural Longetivity Research Intern</h3>
+                            <h3 class="qualification__area">Neural Longetivity Software Research Intern</h3>
 
                             <div class="qualification__box">
                                 <span class="qualification__work">
@@ -231,29 +230,6 @@
             <h2 class="section-title">Services</h2>
 
             <div class="services__container bd-grid">
-                <!-- <div class="services__data">
-                    <i class='bx bx-palette service__icon'></i>
-                    <h3 class="services__title">Ui/Ux Design</h3>
-                    <p class="services__description">Services I offer and work, with years of experience in the work
-                        area. </p>
-                    <a href="#" class="button">Know More</a>
-                </div>
-
-                <div class="services__data">
-                    <i class='bx bx-laptop service__icon'></i>
-                    <h3 class="services__title">Web development</h3>
-                    <p class="services__description">Services I offer and work, with years of experience in the work
-                        area. </p>
-                    <a href="#" class="button">Know More</a>
-                </div>
-
-                <div class="services__data">
-                    <i class='bx bx-pen service__icon'></i>
-                    <h3 class="services__title">Graphic Design</h3>
-                    <p class="services__description">Services I offer and work, with years of experience in the work
-                        area. </p>
-                    <a href="#" class="button">Know More</a>
-                </div> -->
                 <div class="circular-element">
                     <!-- <i class='bx bx-palette service__icon'></i> -->
                     <h3 class="services__title">Web Development</h3>
@@ -309,31 +285,6 @@
 
             <div class="portfolio__container bd-grid">
                 <div class="portfolio__content mix react">
-                    <a href="#">
-                        <img src="assets/img/youtube-logo.png" alt="" class="portfolio__img">
-                    </a>
-                    <div class="portfolio__data">
-                        <span class="portfolio__subtitle">Web development</span>
-                        <a href="#">
-                            <h2 class="portfolio__title">Youtube Clone</h2>
-                        </a>
-                        <p class="portfolio__subtitle"><span>Tools: </span>React, Tailwind CSS</p>
-                        <p class="portfolio__subtitle"><span>Features: </span>Home Page, Search Page</p>
-
-                        <!-- <a href="#" class="button button-link">View Details</a> -->
-                        <!-- github -->
-                        <!-- demo -->
-                        <a href="https://github.com/WardahJabeen">
-                            <i class='bx bxl-github portfolio__link'></i>
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/wardah-jabeen-9488b71ba">
-                            <i class='bx bx-link-external portfolio__link'></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="portfolio__content mix native">
 
                     <a href="#">
                         <img src="assets/img/disney-logo.png" alt="" class="portfolio__img">
@@ -343,23 +294,23 @@
                         <a href="#">
                             <h2 class="portfolio__title">Disney Clone</h2>
                         </a>
-                        <p class="portfolio__subtitle"><span>Tools: </span>React, Tailwind CSS</p>
-                        <p class="portfolio__subtitle"><span>Features: </span>Home Page, Detail Page</p>
+                        <p class="portfolio__description"><span>Tools: </span>React, Redux</p>
+                        <p class="portfolio__description"><span>Features: </span>Home & Detail Page</p>
 
                         <!-- <a href="#" class="button button-link">View Details</a> -->
                         <!-- github -->
                         <!-- demo -->
-                        <a href="https://github.com/WardahJabeen">
+                        <a href="https://github.com/WardahJabeen/disney-clone">
                             <i class='bx bxl-github portfolio__link'></i>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/wardah-jabeen-9488b71ba">
+                        <a href="https://disney-clone-ce9c3.web.app/">
                             <i class='bx bx-link-external portfolio__link'></i>
                         </a>
                     </div>
                 </div>
 
-                <div class="portfolio__content mix native">
+                <div class="portfolio__content mix react">
 
                     <a href="#">
                         <img src="assets/img/amazon-logo.png" alt="" class="portfolio__img">
@@ -369,23 +320,24 @@
                         <a href="#">
                             <h2 class="portfolio__title">Amazon Clone</h2>
                         </a>
-                        <p class="portfolio__subtitle"><span>Tools: </span>React, Tailwind CSS</p>
-                        <p class="portfolio__subtitle"><span>Features: </span>Home Page, Detail Page</p>
+                        <p class="portfolio__description"><span>Tools: </span>React, Context API, Firebase</p>
+                        <p class="portfolio__description"><span>Features: </span>Home, Checkout, Login</p>
 
                         <!-- <a href="#" class="button button-link">View Details</a> -->
                         <!-- github -->
                         <!-- demo -->
-                        <a href="https://github.com/WardahJabeen">
+                        <a href="https://github.com/WardahJabeen/amazon-clone">
                             <i class='bx bxl-github portfolio__link'></i>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/wardah-jabeen-9488b71ba">
+                        <a href="https://clone-dadc1.web.app/">
                             <i class='bx bx-link-external portfolio__link'></i>
                         </a>
                     </div>
                 </div>
 
-                <div class="portfolio__content mix native">
+
+                <div class="portfolio__content mix react">
 
                     <a href="#">
                         <img src="assets/img/cafe-logo.png" alt="" class="portfolio__img">
@@ -393,24 +345,24 @@
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">Web development</span>
                         <a href="#">
-                            <h2 class="portfolio__title">Disney Clone</h2>
+                            <h2 class="portfolio__title">Cafe Web</h2>
                         </a>
-                        <p class="portfolio__subtitle"><span>Tools: </span>React, Tailwind CSS</p>
-                        <p class="portfolio__subtitle"><span>Features: </span>Home Page, Detail Page</p>
+                        <p class="portfolio__description"><span>Tools: </span>React, Tailwind CSS</p>
+                        <p class="portfolio__description"><span>Features: </span>Fully Responsive</p>
 
                         <!-- <a href="#" class="button button-link">View Details</a> -->
                         <!-- github -->
                         <!-- demo -->
-                        <a href="https://github.com/WardahJabeen">
+                        <a href="https://github.com/WardahJabeen/cafe-web">
                             <i class='bx bxl-github portfolio__link'></i>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/wardah-jabeen-9488b71ba">
+                        <a href="https://web-cafe-e8e59.web.app">
                             <i class='bx bx-link-external portfolio__link'></i>
                         </a>
                     </div>
                 </div>
-                <div class="portfolio__content mix native">
+                <div class="portfolio__content mix react">
 
                     <a href="#">
                         <img src="assets/img/store-logo.png" alt="" class="portfolio__img">
@@ -418,19 +370,145 @@
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">Web development</span>
                         <a href="#">
-                            <h2 class="portfolio__title">Disney Clone</h2>
+                            <h2 class="portfolio__title">E-commerce</h2>
                         </a>
-                        <p class="portfolio__subtitle"><span>Tools: </span>React, Tailwind CSS</p>
-                        <p class="portfolio__subtitle"><span>Features: </span>Home Page, Detail Page</p>
+                        <p class="portfolio__description"><span>Tools: </span>React, Redux, Tailwind CSS</p>
+                        <p class="portfolio__description"><span>Features: </span>Home Page, Add to Cart</p>
 
                         <!-- <a href="#" class="button button-link">View Details</a> -->
                         <!-- github -->
                         <!-- demo -->
-                        <a href="https://github.com/WardahJabeen">
+                        <a href="https://github.com/WardahJabeen/ecommerce-web">
                             <i class='bx bxl-github portfolio__link'></i>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/wardah-jabeen-9488b71ba">
+                        <a href="https://fasion-store-redux.web.app/">
+                            <i class='bx bx-link-external portfolio__link'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio__content mix react">
+                    <a href="#">
+                        <img src="assets/img/youtube-logo.png" alt="" class="portfolio__img">
+                    </a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Web development</span>
+                        <a href="#">
+                            <h2 class="portfolio__title">Youtube Clone</h2>
+                        </a>
+                        <p class="portfolio__description"><span>Tools: </span>React, Material UI</p>
+                        <p class="portfolio__description"><span>Features: </span>Home & Search Page</p>
+
+                        <!-- <a href="#" class="button button-link">View Details</a> -->
+                        <!-- github -->
+                        <!-- demo -->
+                        <a href="https://github.com/WardahJabeen/youtube-clone">
+                            <i class='bx bxl-github portfolio__link'></i>
+                        </a>
+
+                        <a href="https://clone-d9884.web.app/">
+                            <i class='bx bx-link-external portfolio__link'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio__content mix native">
+
+                    <a href="#">
+                        <img src="assets/img/tesla-logo.png" alt="" class="portfolio__img">
+                    </a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">App development</span>
+                        <a href="#">
+                            <h2 class="portfolio__title">Tesla Clone</h2>
+                        </a>
+                        <p class="portfolio__description"><span>Tools: </span>React Native</p>
+                        <p class="portfolio__description"><span>Features: </span>Home Page</p>
+
+                        <!-- <a href="#" class="button button-link">View Details</a> -->
+                        <!-- github -->
+                        <!-- demo -->
+                        <a href="https://github.com/WardahJabeen/tesla-clone">
+                            <i class='bx bxl-github portfolio__link'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content mix ios">
+
+                    <a href="#">
+                        <img src="assets/img/flashcards-logo.png" alt="" class="portfolio__img">
+                    </a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">App development</span>
+                        <a href="#">
+                            <h2 class="portfolio__title">Flashcards</h2>
+                        </a>
+                        <p class="portfolio__description"><span>Tools: </span>Swift, Local DB</p>
+                        <p class="portfolio__description"><span>Features: </span>Data Persistence</p>
+
+                        <a href="https://youtu.be/7YB-FoBAPiI">
+                            <i class='bx bx-link-external portfolio__link'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio__content mix ios">
+
+                    <a href="#">
+                        <img src="assets/img/social-logo.jpg" alt="" class="portfolio__img">
+                    </a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">App development</span>
+                        <a href="#">
+                            <h2 class="portfolio__title">Social Media</h2>
+                        </a>
+                        <p class="portfolio__description"><span>Tools: </span>Swift, Firebase, Apple</p>
+                        <p class="portfolio__description"><span>Features: </span>Login, Home, Profile </p>
+
+                        <a href="https://youtu.be/7YB-FoBAPiI">
+                            <i class='bx bx-link-external portfolio__link'></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="portfolio__content mix ios">
+
+                    <a href="#">
+                        <img src="assets/img/calc-logo.png" alt="" class="portfolio__img">
+                    </a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">App development</span>
+                        <a href="#">
+                            <h2 class="portfolio__title">Tip Calculator</h2>
+                        </a>
+                        <p class="portfolio__description"><span>Tools: </span>Swift</p>
+                        <p class="portfolio__description"><span>Features: </span>Auto-layout, Alert Popups
+                        </p>
+
+
+                        <a href="https://youtu.be/7YB-FoBAPiI">
+                            <i class='bx bx-link-external portfolio__link'></i>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="portfolio__content mix ios">
+
+                    <a href="#">
+                        <img src="assets/img/unsplash-logo.png" alt="" class="portfolio__img">
+                    </a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">App development</span>
+                        <a href="#">
+                            <h2 class="portfolio__title">Unsplash API</h2>
+                        </a>
+                        <p class="portfolio__description"><span>Tools: </span>Swift, Unsplash API</p>
+                        <p class="portfolio__description"><span>Features: </span>Synchronization </p>
+
+
+                        <a href="https://youtu.be/7YB-FoBAPiI">
                             <i class='bx bx-link-external portfolio__link'></i>
                         </a>
                     </div>
@@ -439,365 +517,322 @@
             </div>
         </section>
 
-        <!--contactme  -->
-        <!-- <section class="contact section bd-container" id="contact">
-            <span class="section-subtitle">For Projects</span>
-            <h2 class="section-title">Contact Me</h2>
 
-            <div class="contact__container bd-grid">
-                <div class="contact__content bd-grid">
-                    <div class="contact__box">
-                        <i class='bx bx-home contact__icon'></i>
-                        <h3 class="contact__title">Location</h3>
-                        <span class="contact__description">#123 Lima -Peru</span>
-                    </div>
+        <section class="section" id="courses">
+            <div class="carousel" data-carousel>
+                <h2 class="section-subtitle">School Projects</h2>
+                <h2 class="section-title">Courses</h2>
 
-                    <div class="contact__box">
-                        <i class='bx bx-phone contact__icon'></i>
-                        <h3 class="contact__title">Phone</h3>
-                        <span class="contact__description">#123 Lima -Peru</span>
-                    </div>
+                <button class="carousel__prevButton carousel__button" data-carousel-button="prev">&#8656;</button>
+                <button class="carousel__nextButton carousel__button" data-carousel-button="next">&#8658;</button>
+                <ul data-slides>
+                    <li class="carousel__slide" data-active>
+                        <section class="services section bd-container" id="services">
 
-                    <div class="contact__box">
-                        <i class='bx bx-envelope contact__icon'></i>
-                        <h3 class="contact__title">Gmail</h3>
-                        <span class="contact__description">#123 Lima -Peru</span>
-                    </div>
+                            <div class="courses__container bd-grid">
+                                <div class="card-container">
+                                    <div class="card">
+                                        <div class="card-front">
+                                            <span class="card__subtitle">CSCI-104</span>
+                                            <span class="card__language">(C++)</span>
+                                            <h2 class="card__title">Data<br>Structures</h2>
 
-                    <div class="contact__box">
-                        <i class='bx bx-chat contact__icon'></i>
-                        <h3 class="contact__title">Chat</h3>
-                        <a href="#" class="contact__social">
-                            <i class='bx bxl-whatsapp-square'></i>
-                        </a>
-                        <a href="#" class="contact__social">
-                            <i class='bx bxl-telegram'></i>
-                        </a>
-                        <a href="#" class="contact__social">
-                            <i class='bx bxl-messenger'></i>
-                        </a>
-                    </div>
-                </div>
+                                            <button
+                                                class="flip-button  carousel__assignmentBtnn button">Assignments</button>
+                                        </div>
+                                        <div class="card-back">
+                                            <div class="card__assignments">
+                                                <span class="card__red card__back__title">Projects:</span>
+                                                <p><span class="card__gold">1:</span> Doubly Linked-list</p>
+                                                <p><span class="card__gold">2:</span> Database Parser</p>
+                                                <p><span class="card__gold">3:</span> Minheap & Graph-coloring
+                                                    (backtrack
+                                                    recursion)</p>
+                                                <p><span class="card__gold">4:</span> AVL BST & Floor-plan (backtrack
+                                                    recursion)</p>
+                                                <p><span class="card__gold">5:</span> Bayesian Probability</p>
+                                                <p><span class="card__gold">6:</span> Hashtable</p>
+                                            </div>
+
+                                            <button class="flip-button carousel__assignmentBtnn button">Course
+                                                Name</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-container">
+                                    <div class="card">
+                                        <div class="card-front">
+                                            <span class="card__subtitle">CSCI-270</span>
+                                            <span class="card__language"></span>
+                                            <h2 class="card__title">Algorithms</h2>
+
+                                            <button
+                                                class="flip-button carousel__assignmentBtnn button">Assignments</button>
+                                        </div>
+                                        <div class="card-back">
+                                            <div class="card__assignments">
+                                                <span class="card__red card__back__title">Assignments:</span>
+                                                <p><span class="card__gold">1:</span> Stable Matching</p>
+                                                <p><span class="card__gold">2:</span> Greedy ALgorithms + Divide &
+                                                    Conquer
+                                                </p>
+                                                <p><span class="card__gold">3:</span> Dynamic Programming</p>
+                                                <p><span class="card__gold">4:</span> Max Flow / Min Cut</p>
+                                                <p><span class="card__gold">5:</span> NP-Completeness</p>
+                                            </div>
+
+                                            <button class="flip-button carousel__assignmentBtnn button">Course
+                                                Name</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-container">
+                                    <div class="card">
+                                        <div class="card-front">
+                                            <span class="card__subtitle">CSCI-201</span>
+                                            <span class="card__language">(Java)</span>
+                                            <h2 class="card__title">Software<br>Development</h2>
+
+                                            <button
+                                                class="flip-button carousel__assignmentBtnn button">Assignments</button>
+                                        </div>
+                                        <div class="card-back">
+                                            <div class="card__assignments">
+                                                <span class="card__red card__back__title">Projects:</span>
+                                                <p><span class="card__gold">1:</span> Objects Oriented Programming</p>
+                                                <p><span class="card__gold">2:</span> Multithreading</p>
+                                                <p><span class="card__gold">3:</span> Semaphores</p>
+                                                <span class="card__red card__back__title">Final Project:</span>
+                                                <p><span class="card__gold">-</span> Team of 6</p>
+                                                <p><span class="card__gold">-</span> An app to find partners for sharing
+                                                    rides</p>
+                                                <p><span class="card__gold">-</span> <u
+                                                        class="card__underline">Responsibility</u>: Backend</p>
+                                                <p><span class="card__gold">-</span> <u>Backend</u>: Java Servlets</p>
+                                                <p><span class="card__gold">-</span> <u>Frontend</u>: HTML, CSS</p>
+                                                <p><span class="card__gold">-</span> <u>Database</u>: MySQL</p>
+                                            </div>
+
+                                            <button class="flip-button carousel__assignmentBtnn button">Course
+                                                Name</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+
+
+                    </li>
+                    <li class="carousel__slide">
+                        <section class="services section bd-container" id="services">
+
+
+
+                            <div class="courses__container bd-grid">
+                                <div class="card-container">
+                                    <div class="card">
+                                        <div class="card-front">
+                                            <span class="card__subtitle">CSCI-310</span>
+                                            <span class="card__language">(Java)</span>
+                                            <h2 class="card__title">Software<br>Engineering</h2>
+
+                                            <button
+                                                class="flip-button carousel__assignmentBtnn button">Assignments</button>
+                                        </div>
+                                        <div class="card-back">
+                                            <div class="card__assignments">
+                                                <span class="card__red card__back__title">Projects:</span>
+                                                <p><span class="card__gold">1:</span> Git Flow</p>
+                                                <p><span class="card__gold">2:</span> White-box Testing</p>
+                                                <p><span class="card__gold">3:</span> Black-box Testing</p>
+                                                <span class="card__red card__back__title">Final Project:</span>
+                                                <p><span class="card__gold">- </span>Team of 5</p>
+                                                <p><span class="card__gold">- </span>A social media app to share movie
+                                                    recommendations</p>
+                                                <p><span class="card__gold">-</span> <u>Responsibility</u>: Frontend</p>
+                                                <p><span class="card__gold">-</span> <u>Frontend</u>: ReactJS
+                                                <p><span class="card__gold">-</span> <u>Backend </u>: Java</span>
+                                                <p><span class="card__gold">-</span> <u>Database</u>: PostgreSQL</span>
+                                            </div>
+
+                                            <button class="flip-button carousel__assignmentBtnn button">Course
+                                                Name</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-container">
+                                    <div class="card">
+                                        <div class="card-front">
+                                            <span class="card__subtitle">CSCI-350</span>
+                                            <span class="card__language">(C)</span>
+                                            <h2 class="card__title">Operating<br>Systems</h2>
+
+                                            <button
+                                                class="flip-button carousel__assignmentBtnn button">Assignments</button>
+                                        </div>
+                                        <div class="card-back">
+                                            <div class="card__assignments">
+                                                <span class="card__red card__back__title">Projects:</span>
+                                                <p><span class="card__gold">1:</span> System Calls</p>
+                                                <p><span class="card__gold">2:</span> Kernel Threads & Synchronization
+                                                </p>
+                                                <p><span class="card__gold">3:</span> Multilevel Feedback Queue (MLFQ)
+                                                    Scheduler
+                                                </p>
+                                                <p><span class="card__gold">4:</span> Memory Management & Paging
+                                                    (Copy-on-Write)
+                                                </p>
+                                                <p><span class="card__gold">5:</span> Map Reduce</p>
+                                            </div>
+
+                                            <button class="flip-button  carousel__assignmentBtnn button">Course
+                                                Name</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-container">
+                                    <div class="card">
+                                        <div class="card-front">
+                                            <span class="card__subtitle">CSCI-353</span>
+                                            <span class="card__language">(C++)</span>
+                                            <h2 class="card__title">Inter-<br>networking</h2>
+
+                                            <button
+                                                class="flip-button carousel__assignmentBtnn button">Assignments</button>
+                                        </div>
+                                        <div class="card-back">
+                                            <div class="card__assignments">
+                                                <span class="card__red card__back__title">Projects:</span>
+                                                <p><span class="card__gold">1:</span> BFS & DFS</p>
+                                                <p><span class="card__gold">2:</span> Simple Web Server & Client</p>
+                                                <p><span class="card__gold">3:</span> Multithreaded Server</p>
+                                                <p><span class="card__gold">4:</span> Network: Link & Network Layers</p>
+                                                <p><span class="card__gold">5:</span> Network: Transport & Application
+                                                    Layers</p>
+                                            </div>
+
+                                            <button class="flip-button carousel__assignmentBtnn button">Course
+                                                Name</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+
+
+                    </li>
+                    <li class="carousel__slide">
+                        <section class="services section bd-container" id="services">
+
+
+
+                            <div class="courses__container bd-grid">
+                                <div class="card-container">
+                                    <div class="card">
+                                        <div class="card-front">
+                                            <span class="card__subtitle">ITP-380</span>
+                                            <span class="card__language">(C++)</span>
+                                            <h2 class="card__title">Video Game<br>Programming</h2>
+
+                                            <button
+                                                class="flip-button carousel__assignmentBtnn button">Assignments</button>
+                                        </div>
+                                        <div class="card-back">
+                                            <div class="card__assignments">
+                                                <span class="card__red card__back__title">Projects:</span>
+                                                <p><span class="card__gold">1:</span> Pong</p>
+                                                <p><span class="card__gold">2:</span> Asteroid</p>
+                                                <p><span class="card__gold">3:</span> Frogger</p>
+                                                <p><span class="card__gold">4:</span> Mario</p>
+                                                <p><span class="card__gold">5:</span> Pac Man</p>
+                                                <p><span class="card__gold">6:</span> Zelda</p>
+                                                <p><span class="card__gold">7:</span> Stardust</p>
+                                                <p><span class="card__gold">8:</span> Mario Kart</p>
+                                            </div>
+
+                                            <button class="flip-button carousel__assignmentBtnn button">Course
+                                                Name</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-container">
+                                    <div class="card">
+                                        <div class="card-front">
+                                            <span class="card__subtitle">ITP-342</span>
+                                            <span class="card__language">(Swift)</span>
+                                            <h2 class="card__title">iOS App<br>Development</h2>
+
+                                            <button
+                                                class="flip-button carousel__assignmentBtnn button">Assignments</button>
+                                        </div>
+                                        <div class="card-back">
+                                            <div class="card__assignments">
+                                                <span class="card__red card__back__title">Projects:</span>
+                                                <p><span class="card__gold">1:</span> Swift Storyboard</p>
+                                                <p><span class="card__gold">2:</span> Flashcards</p>
+                                                <p><span class="card__gold">3:</span> Tip Calculator</p>
+                                                <p><span class="card__gold">4:</span> Unsplash API</p>
+                                                <p><span class="card__gold">5:</span> Social Media</p>
+                                            </div>
+
+                                            <button class="flip-button carousel__assignmentBtnn button">Course
+                                                Name</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-container">
+                                    <div class="card">
+                                        <div class="card-front">
+                                            <span class="card__subtitle">ITP-435</span>
+                                            <span class="card__language">(C++)</span>
+                                            <h2 class="card__title">Professional<br>C++</h2>
+
+                                            <button
+                                                class="flip-button carousel__assignmentBtnn button">Assignments</button>
+                                        </div>
+                                        <div class="card-back">
+                                            <div class="card__assignments">
+                                                <span class="card__red card__back__title">Projects:</span>
+                                                <p><span class="card__gold">1:</span> RLE Compression</p>
+                                                <p><span class="card__gold">2:</span> Hash Table</p>
+                                                <p><span class="card__gold">3:</span> Trie</p>
+                                                <p><span class="card__gold">4:</span> Genetic Algorithm</p>
+                                                <p><span class="card__gold">5:</span> Virtual Machine</p>
+                                                <p><span class="card__gold">6:</span> Compiler</p>
+                                                <p><span class="card__gold">7:</span> Postman</p>
+                                            </div>
+
+                                            <button class="flip-button  carousel__assignmentBtnn button">Course
+                                                Name</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </section>
+
+
+                    </li>
+
+
+
+
+
+                </ul>
+
+
             </div>
-
-        </section> -->
-
-        <!-- <div class="card-container">
-            <div class="card">
-                <div class="card-front">
-                    <h2>Front Side</h2>
-                    <button class="flip-button">Flip</button>
-                </div>
-                <div class="card-back">
-                    <h2>Back Side</h2>
-                    <p>More information here!</p>
-                    <button class="flip-button">Flip Back</button>
-                </div>
-            </div>
-        </div> -->
-
-        <div class="carousel" data-carousel>
-            <button class="carousel__prevButton carousel__button" data-carousel-button="prev">&#8656;</button>
-            <button class="carousel__nextButton carousel__button" data-carousel-button="next">&#8658;</button>
-            <!-- <div class="carousel__slides"> -->
-            <!-- <div class="carousel__slide" data-active>
-                <i class='bx bx-palette service__icon'></i>
-                <h3 class="services__title">Ui/Ux Design</h3>
-                <p class="services__description">Services I offer and work, with years of experience in the work
-                    area. </p>
-                <a href="#" class="button">Know More</a>
-            </div>
-            <div class="carousel__slide">
-                <i class='bx bx-palette service__icon'></i>
-                <h3 class="services__title">Ui/Ux Design</h3>
-                <p class="services__description">Services I offer and work, with years of experience in the work
-                    area. </p>
-                <a href="#" class="button">Know More</a>
-            </div>
-            <div class="carousel__slide">
-                <i class='bx bx-palette service__icon'></i>
-                <h3 class="services__title">Ui/Ux Design</h3>
-                <p class="services__description">Services I offer and work, with years of experience in the work
-                    area. </p>
-                <a href="#" class="button">Know More</a>
-            </div> -->
-            <ul data-slides>
-                <li class="carousel__slide" data-active>
-                    <section class="services section bd-container" id="services">
-
-                        <h2 class="section-title">Courses ...</h2>
-
-                        <div class="courses__container bd-grid">
-                            <div class="card-container">
-                                <div class="card">
-                                    <div class="card-front">
-                                        <span class="card__subtitle">CSCI-104</span>
-                                        <span class="card__language">(C++)</span>
-                                        <h2 class="card__title">Data Structures</h2>
-
-                                        <button
-                                            class="flip-button  carousel__assignmentBtnn button">Assignments</button>
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="assignments">
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                        </div>
-
-                                        <button class="flip-button carousel__assignmentBtnn button">Course Name</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-container">
-                                <div class="card">
-                                    <div class="card-front">
-                                        <span class="card__subtitle">CSCI-201</span>
-                                        <span class="card__language">(C++)</span>
-                                        <h2 class="card__title"> Structures</h2>
-
-                                        <button class="flip-button carousel__assignmentBtnn button">Assignments</button>
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="assignments">
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                        </div>
-
-                                        <button class="flip-button carousel__assignmentBtnn button">Course Name</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-container">
-                                <div class="card">
-                                    <div class="card-front">
-                                        <span class="card__subtitle">CSCI-104</span>
-                                        <span class="card__language">(C++)</span>
-                                        <h2 class="card__title">Data </h2>
-
-                                        <button class="flip-button carousel__assignmentBtnn button">Assignments</button>
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="assignments">
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                        </div>
-
-                                        <button class="flip-button carousel__assignmentBtnn button">Course Name</button>
-                                    </div>
-                                </div>
-                            </div>
-                    </section>
-
-
-                </li>
-                <li class="carousel__slide" data-active>
-                    <section class="services section bd-container" id="services">
-
-                        <h2 class="section-title">Courses ...</h2>
-
-                        <div class="courses__container bd-grid">
-                            <div class="card-container">
-                                <div class="card">
-                                    <div class="card-front">
-                                        <span class="card__subtitle">CSCI-201</span>
-                                        <span class="card__language">(C++)</span>
-                                        <h2 class="card__title">sdfsfvadv</h2>
-
-                                        <button class="flip-button carousel__assignmentBtnn button">Assignments</button>
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="assignments">
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                        </div>
-
-                                        <button class="flip-button carousel__assignmentBtnn button">Course Name</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-container">
-                                <div class="card">
-                                    <div class="card-front">
-                                        <span class="card__subtitle">CSCI-104</span>
-                                        <span class="card__language">(C++)</span>
-                                        <h2 class="card__title">Data </h2>
-
-                                        <button class="flip-button carousel__assignmentBtnn button">Assignments</button>
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="assignments">
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                        </div>
-
-                                        <button class="flip-button  carousel__assignmentBtnn button">Course
-                                            Name</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-container">
-                                <div class="card">
-                                    <div class="card-front">
-                                        <span class="card__subtitle">CSCI-104</span>
-                                        <span class="card__language">(C++)</span>
-                                        <h2 class="card__title">asdfsafd Structures</h2>
-
-                                        <button class="flip-button carousel__assignmentBtnn button">Assignments</button>
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="assignments">
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                        </div>
-
-                                        <button class="flip-button carousel__assignmentBtnn button">Course Name</button>
-                                    </div>
-                                </div>
-                            </div>
-                    </section>
-
-
-                </li>
-                <li class="carousel__slide" data-active>
-                    <section class="services section bd-container" id="services">
-
-                        <h2 class="section-title">Courses ...</h2>
-
-                        <div class="courses__container bd-grid">
-                            <div class="card-container">
-                                <div class="card">
-                                    <div class="card-front">
-                                        <span class="card__subtitle">CSCI-310</span>
-                                        <span class="card__language">(C++)</span>
-                                        <h2 class="card__title">asdfs asefs</h2>
-
-                                        <button class="flip-button carousel__assignmentBtnn button">Assignments</button>
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="assignments">
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                        </div>
-
-                                        <button class="flip-button carousel__assignmentBtnn button">Course Name</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-container">
-                                <div class="card">
-                                    <div class="card-front">
-                                        <span class="card__subtitle">CSCI-104</span>
-                                        <span class="card__language">(C++)</span>
-                                        <h2 class="card__title">afdsf afa</h2>
-
-                                        <button class="flip-button carousel__assignmentBtnn button">Assignments</button>
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="assignments">
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                        </div>
-
-                                        <button class="flip-button carousel__assignmentBtnn button">Course Name</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-container">
-                                <div class="card">
-                                    <div class="card-front">
-                                        <span class="card__subtitle">CSCI-104</span>
-                                        <span class="card__language">(C++)</span>
-                                        <h2 class="card__title">Data afdasf</h2>
-
-                                        <button class="flip-button carousel__assignmentBtnn button">Assignments</button>
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="assignments">
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                            <span>- assignmetn 1</span>
-                                        </div>
-
-                                        <button class="flip-button  carousel__assignmentBtnn button">Course
-                                            Name</button>
-                                    </div>
-                                </div>
-                            </div>
-                    </section>
-
-
-                </li>
-
-
-
-
-
-            </ul>
-
-            <!-- </div> -->
-            <!-- <div class="carousel__navigation">
-                <a href="#slide1">1</a>
-                <a href="#slide2">2</a>
-                <a href="#slide3">3</a>
-            </div> -->
-        </div>
-        <h2 class="section-title">... and corresponding assignments</h2>
-
+        </section>
 
     </main>
 
     <!-- footer -->
     <footer class="footer">
         <div class="footer__container bd-container">
-            <!-- <h1 class="footer__title">Wardah Jabeen</h1>
-            <p class="footer__description">I'm Wardah Jabeen and this is my personal website</p> -->
-            <!-- 
-            <div class="footer__social">
-                <a href="#" class="footer__link"><i class="bx bxl-linkedin"></i></a>
-                <a href="#" class="footer__link"><i class="bx bxl-github"></i></a>
-                <a href="#" class="footer__link"><i class="bx bxl-dribble"></i></a>
-            </div> -->
+
             <div class="footer__copy">&#169; 2024 WardahJabeen. All right reserved</div>
         </div>
     </footer>

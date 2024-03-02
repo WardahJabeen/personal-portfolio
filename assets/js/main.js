@@ -143,10 +143,6 @@ buttons.forEach(button => {
     })
 })
 
-
-
-// Start moving the carousel automatically every 5 seconds
-// setInterval(autoMoveCarousel, 2000);
 // flip the card
 document.querySelectorAll('.flip-button').forEach(button => {
     button.addEventListener('click', () => {

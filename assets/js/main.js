@@ -18,6 +18,12 @@ const navLink = document.querySelectorAll('.nav__link')
 function linkAction() {
     const navMenu = document.getElementById('nav-menu')
     navMenu.classList.remove('show-menu')
+
+    // Find the currently active link and remove the active class
+    document.querySelector('.nav__link.active-link').classList.remove('active-link');
+
+    // Add the active class to the clicked link
+    this.classList.add('active-link');
 }
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
@@ -92,14 +98,18 @@ linkPortfolio.forEach(L => L.addEventListener('click', activePortfolio))
 
 // swiper carousel
 
-// gsap animation
-gsap.from('.home__img', { opacity: 0, duration: 2, delay: .5, x: 60 })
-gsap.from('.home__data', { opacity: 0, duration: 2, delay: .8, y: 25 })
-gsap.from('.home__greeting, .home__name, .home__profession', { opacity: 0, duration: 2, delay: 1, y: 25, ease: 'expo.out', stagger: .2 })
 
-gsap.from('.nav__logo .nav__toggle', { opacity: 0, duration: 2, delay: 1.5, y: 25, ease: 'expo.out', stagger: .2 })
-gsap.from('.nav__item', { opacity: 0, duration: 2, delay: 1.8, y: 25, ease: 'expo.out', stagger: .2 })
-gsap.from('.home__social-icon', { opacity: 0, duration: 2, delay: 2.3, y: 25, ease: 'expo.out', stagger: .2 })
+// gsap animation
+gsap.from('.home__img', { opacity: 0, duration: 2, delay: .5, x: 60 }).then(() => { document.querySelector('.home__img').style.opacity = 1; });
+gsap.from('.home__data', { opacity: 0, duration: 2, delay: .8, y: 25 }).then(() => { document.querySelector('.home__data').style.opacity = 1; });
+gsap.from('.home__greeting, .home__name, .home__profession', { opacity: 0, duration: 2, delay: 1, y: 25, ease: 'expo.out', stagger: .2 }).then(() => { document.querySelector('.home__greeting, .home__name, .home__profession').style.opacity = 1; });
+
+gsap.from('.nav__logo .nav__toggle', { opacity: 0, duration: 2, delay: 1.5, y: 25, ease: 'expo.out', stagger: .2 }).then(() => { document.querySelector('.nav__logo .nav__toggle').style.opacity = 1; });
+gsap.from('.nav__item', { opacity: 0, duration: 2, delay: 1.8, y: 25, ease: 'expo.out', stagger: .2 }).then(() => { document.querySelector('.nav__item').style.opacity = 1; });
+// gsap.from('.home__social-icon', { opacity: 0, duration: 2, delay: 2.3, y: 25, ease: 'expo.out', stagger: .2 }).then(() => { document.querySelector('.home__social-icon').style.opacity = 1; });
+
+gsap.from('.home__social-icon', { opacity: 0, duration: 2, delay: 2.3, ease: 'expo.out', stagger: .2 }).then(() => { document.querySelector('.home__social-icon').style.opacity = 1; });
+
 
 // shooting stars
 for (let i = 0; i < 50; i++) { // Increase or decrease for more/less sparkles

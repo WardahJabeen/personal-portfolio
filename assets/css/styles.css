@@ -141,7 +141,7 @@ body {
     background-color: black;
     color: var(--text-color);
     line-height: 1.6;
-    background-image: url('../img/black_bg.jpg');
+    /* background-image: url('../img/black_bg.jpg'); */
     font-weight: 400;
 }
 
@@ -206,6 +206,14 @@ img {
     margin-right: var(--mb-2);
     justify-content: center;
     align-items: center;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: var(--first-color);
+    margin-top: var(--mb-4);
+    margin-bottom: var(--mb-4);
 }
 
 .bd-grid {
@@ -592,6 +600,7 @@ img {
     transition: .3s;
     background: linear-gradient(to bottom, #a256d6 0%, #691e8c 50%, #3f0b62 100%);
     background: linear-gradient(to bottom, #8d83ce 0%, #6d5ad7 50%, #705af0 100%);
+    background: linear-gradient(to bottom, #7760f9 0%, #2c1f73 50%, #110c2d 100%);
     /* background: #000; */
 
 
@@ -611,6 +620,14 @@ img {
 .portfolio__link:hover {
     color: var(--first-color-lighten);
 
+
+
+}
+
+.portfolio__title:hover {
+    color: var(--first-color);
+    text-decoration: underline;
+
 }
 
 
@@ -621,6 +638,7 @@ img {
     background: linear-gradient(to bottom, #4B007D 0%, #2A003E 50%, #12001E 100%);
 
     background: linear-gradient(to bottom, #7760f9 0%, #2c1f73 50%, #110c2d 100%);
+    background: linear-gradient(to bottom, #8d83ce 0%, #6d5ad7 50%, #705af0 100%);
 
 
 
@@ -728,20 +746,20 @@ img {
 
 .portfolio__content {
 
-    height: 400px;
+    /* height: 400px;
     background-color: #FFF;
     border-radius: .5rem;
-    overflow: hidden;
+    overflow: hidden; */
     /* box-shadow: 0 4px 6px rgba(174, 190, 205, .3); */
-    background: linear-gradient(to bottom, #4B007D 0%, #2A003E 50%, #12001E 100%);
-    background: linear-gradient(to bottom, #5d48d5 0%, #2c1f73 50%, #110c2d 100%);
+    /* background: linear-gradient(to bottom, #4B007D 0%, #2A003E 50%, #12001E 100%);
+    background: linear-gradient(to bottom, #5d48d5 0%, #2c1f73 50%, #110c2d 100%); */
 
 }
 
 
 .portfolio__content:hover {
-    background: linear-gradient(to bottom, #a256d6 0%, #691e8c 50%, #3f0b62 100%);
-    background: linear-gradient(to bottom, #8773fa 0%, #4c3ca7 50%, #1e1552 100%);
+    /* background: linear-gradient(to bottom, #a256d6 0%, #691e8c 50%, #3f0b62 100%);
+    background: linear-gradient(to bottom, #8773fa 0%, #4c3ca7 50%, #1e1552 100%); */
 
 }
 
@@ -773,9 +791,9 @@ img {
 }
 
 .portfolio__title {
-    font-size: 1.95rem;
-    font-weight: 350;
-    color: var(--first-color-lighten);
+    font-size: 1.15rem;
+    color: white;
+    font-weight: var(--font-bold);
     margin: var(--mb-2) 0;
 }
 
@@ -784,15 +802,15 @@ img {
 }
 
 .portfolio__content:hover .portfolio__description {
-    color: var(--first-color-lighten);
+    /* color: var(--first-color-lighten); */
 }
 
-.portfolio__content:hover .portfolio__title {
+/* .portfolio__content:hover .portfolio__title {
     font-size: var(--h2-font-size);
-}
+} */
 
 ​ .portfolio__content:hover .portfolio__img {
-    transform: scale(1.02);
+    /* transform: scale(1.02); */
 }
 
 .skills {
@@ -961,7 +979,8 @@ img {
 
 .card__front {
     background: linear-gradient(to bottom, #a256d6 0%, #581776 50%, #32074f 100%);
-    background: linear-gradient(to bottom, #8773fa 0%, #4c3ca7 50%, #1e1552 100%);
+    background: linear-gradient(to bottom, #1e1552 0%, #1a143c 50%, black 100%);
+    /* background: black; */
 
 
 }
@@ -1052,6 +1071,7 @@ img {
     position: absolute;
     bottom: 0;
     margin-bottom: 20px;
+    background-color: black;
     /* border-bottom: 1px solid #fff; */
     /* box-shadow: 0 4px 6px rgba(174, 190, 205, .3); */
 
@@ -1080,8 +1100,7 @@ img {
 
     .about__container,
     .qualification__container,
-    .services__container,
-    .portfolio__container {
+    .services__container {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -1108,11 +1127,11 @@ img {
 
 
     .portfolio__content {
-        width: 300px;
+        /* width: 300px; */
     }
 
     .portfolio__container {
-        justify-content: center;
+        /* justify-content: center; */
     }
 
     .home__social svg {
@@ -1162,7 +1181,8 @@ img {
 
 
 
-    .home__profession {
+    .home__profession,
+    .portfolio__title {
         font-size: 2rem;
     }
 
@@ -1194,8 +1214,7 @@ img {
         justify-content: space-between;
     }
 
-    .services__container,
-    .portfolio__container {
+    .services__container {
         grid-template-columns: repeat(4, 1fr);
     }
 
